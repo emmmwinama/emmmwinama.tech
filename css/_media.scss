@@ -1,0 +1,279 @@
+/* media query for tablet */
+
+@media only screen and (min-width: 768px) {
+  .cta {
+    font-size: 2.5rem;
+    // padding: 20px 60px;
+  }
+
+  .container {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1.section-title {
+    font-size: 3rem;
+  }
+
+  /* hero */
+
+  #hero h1 {
+    font-size: 7rem;
+  }
+
+  /* end hero */
+
+  /* services */
+
+  #services .service-bottom .service-item {
+    flex-basis: 45%;
+    margin: 2.5%;
+  }
+
+  #services .service-top {
+    width: 500px;
+  }
+
+  #services .service-bottom {
+    justify-content: flex-start;
+  }
+
+  #services .languages {
+  }
+
+  #services .languages-wrapper {
+    justify-content: flex-start;
+  }
+
+  #services .languages .languages-items {
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  /* end services */
+
+  /* projects */
+
+  #projects .projects-header {
+    width: 500px;
+  }
+
+  #projects .projects-item {
+    flex-direction: row;
+  }
+
+  #projects .projects-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #projects .projects-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+
+  #projects .all-projects .project-img {
+    height: 100%;
+  }
+
+  #projects .projects-button-group {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  #projects .projects-button-group {
+    padding-left: 25px;
+  }
+
+  /* end projects */
+
+  /* about */
+
+  #about .about {
+    flex-direction: row;
+  }
+
+  #about .col-left {
+    width: 600px;
+    height: 400px;
+    padding-left: 60px;
+  }
+
+  #about .about .col-left .about-img::after {
+    left: -45px;
+    top: 34px;
+    height: 98%;
+    width: 98%;
+    border: 10px solid rgb(17, 201, 17);
+  }
+
+  #about .col-right {
+    text-align: left;
+    padding: 30px;
+    width: 100%;
+  }
+
+  #about .col-right h1 {
+    text-align: left;
+  }
+  /* end about */
+
+  #property .details {
+    flex-direction: row;
+  }
+
+  #property .distinct-details {
+    flex: 1;
+    padding: 30px 10px 10px 0;
+  }
+
+  #property .desc-wrapper {
+    flex: 1;
+    padding: 30px 0px 10px 10px;
+  }
+
+  #property .det-wrapper {
+    display: flex;
+    margin: 0 0;
+    padding: 0 0 30px 0;
+  }
+
+  #property .det-title {
+    flex: 2;
+  }
+
+  #property .det-wrapper p:nth-child(2) {
+    flex: 3;
+  }
+
+  #property .row {
+    display: table;
+  }
+
+  #property .row:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  /* contact */
+
+  #contact .contact {
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    justify-content: center;
+    min-width: 20vh;
+  }
+
+  #contact .contact-items {
+    width: 100%;
+  }
+  //   display: flex;
+  //   flex-direction: row;
+  //   padding: 20px;
+  //   margin: 0;
+  //   border: 1px solid yellow;
+  // }
+
+  #contact .contact-item {
+    width: 90%;
+  }
+  //   margin: 20px auto;
+  //   flex-direction: row;
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  // #contact .contact-item .icon {
+  //   height: 50px;
+  //   width: 50px;
+  // }
+
+  // #contact .contact-item .icon .img {
+  //   object-fit: contain;
+  // }
+
+  // #contact .contact-item .contact-info {
+  //   width: 100%;
+  //   text-align: left;
+  //   padding-left: 20px;
+  // }
+
+  /* end contact */
+}
+
+/* end media query for tablet */
+
+/* media query for desktop */
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 6rem;
+  }
+
+  #header .hamburger {
+    display: none;
+  }
+
+  #header .nav-list ul {
+    position: initial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+
+  #header .nav-list ul li {
+    display: inline-block;
+  }
+  #header .nav-list ul a:after {
+    display: none;
+  }
+
+  #services .service-bottom .service-item {
+    flex-basis: 48%;
+    margin: 1%;
+  }
+
+  #services .languages .languages-items {
+    width: 50%;
+    padding: 0 20px;
+    margin: 0;
+  }
+
+  #contact .contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+
+  #contact .contact-item {
+    width: 100%;
+    margin: 20px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* end media query for desktop */
